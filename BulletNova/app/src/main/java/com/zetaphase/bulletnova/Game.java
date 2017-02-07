@@ -12,7 +12,9 @@ public class Game extends Activity {
         super.onCreate(savedInstanceState);
         // no title on top
         requestWindowFeature(Window.FEATURE_NO_TITLE);
+        // set to full screen
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout.activity_game);
+
+        setContentView(new GamePanel(this));
     }
 }
