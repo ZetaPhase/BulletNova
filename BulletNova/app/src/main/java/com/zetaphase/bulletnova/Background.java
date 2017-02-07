@@ -17,11 +17,17 @@ public class Background {
     }
 
     public void update(){
-        x += dy;
+        y += dy;
+        if(y<-GamePanel.HEIGHT){
+            y=0;
+        }
     }
 
     public void draw(Canvas canvas){
         canvas.drawBitmap(image, x, y, null);
+        if(x<0){
+            canvas.drawBitmap(image, x, y+GamePanel.HEIGHT, null);
+        }
     }
     public void setVector(int dy){
         this.dy = dy;
