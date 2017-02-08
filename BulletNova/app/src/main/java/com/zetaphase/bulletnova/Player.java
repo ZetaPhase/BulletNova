@@ -57,11 +57,11 @@ public class Player extends GameObject{
         dy = 0;
     }
     public void draw(Canvas canvas){
-        canvas.drawBitMap(animation.getImage(),x,y,null);
+        canvas.drawBitmap(animation.getImage(),x,y,null);
     }
     public int getScore(){return score;}
     public boolean getPlaying(){return playing;}
     public void setPlaying(boolean b){playing = b;}
     public void resetDYA(){dya = 0;}
-    public void resetScore(){score = 0};
+    public void resetScore(){score = 0;}
 }
