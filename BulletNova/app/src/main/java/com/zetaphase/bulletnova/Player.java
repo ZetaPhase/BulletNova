@@ -12,6 +12,8 @@ public class Player extends GameObject{
     private boolean playing;
     private Animation animation = new Animation();
     private long startTime;
+    private int touchX;
+    private int touchY;
 
     public Player(Bitmap res, int w, int h, int numFrames) {
 
@@ -74,4 +76,10 @@ public class Player extends GameObject{
     public void setPlaying(boolean b){playing = b;}
     public void resetDYA(){dya = 0;}
     public void resetScore(){score = 0;}
+    public void setTouchX(int touchX){
+        this.touchX = touchX;
+    }
+    public void setTouchY(int touchY){
+        this.touchY = touchY;
+    }
 }
