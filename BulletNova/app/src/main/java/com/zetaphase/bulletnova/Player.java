@@ -51,7 +51,11 @@ public class Player extends GameObject{
         animation.update();
 
         System.out.println("Dya" + dya);
-        dy = (int)(dya=(touchY - y));
+        if(Math.abs(touchY - y)>8){
+            dy = (int)(dya=(touchY - y));
+        }else{
+            dy = (int)(dya=0);
+        }
         /*
         if(touchY < y){
             dy = (int)(dya=(touchY - y));
@@ -72,7 +76,7 @@ public class Player extends GameObject{
         if(dy>14)dy = 14;
         if(dy<-14)dy = -14;
         if(y<0)y=0;
-        if(y>300)y=300;
+        if(y>930)y=930;
 
         y += dy*2;
         dy = 0;
@@ -80,7 +84,7 @@ public class Player extends GameObject{
 
     public void draw(Canvas canvas)
     {
-        canvas.drawBitmap(animation.getImage(),x,y,null);
+        canvas.drawBitmap(animation.getImage(),x,y-100,null);
     }
     public int getScore(){return score;}
     public boolean getPlaying(){return playing;}
