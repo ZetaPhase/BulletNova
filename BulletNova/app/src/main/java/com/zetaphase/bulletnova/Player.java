@@ -50,6 +50,7 @@ public class Player extends GameObject{
         }
         animation.update();
 
+        System.out.println("Dya" + dya);
         if(up){
             dy = (int)(dya-=1.1);
 
