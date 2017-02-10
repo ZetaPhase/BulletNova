@@ -8,7 +8,7 @@ public class Player extends GameObject{
     private Bitmap spritesheet;
     private int score;
     private double dya;
-    private boolean up;
+    private boolean touching;
     private boolean playing;
     private Animation animation = new Animation();
     private long startTime;
@@ -40,7 +40,7 @@ public class Player extends GameObject{
 
     }
 
-    public void setUp(boolean b){up = b;}
+    public void setTouching(boolean b){touching = b;}
 
     public void update()
     {
@@ -58,8 +58,11 @@ public class Player extends GameObject{
         - Player Y position does not change according to TouchX
         - Changes according to difference in TouchX and PreviousTouchX
          */
-        if(up){
-            dy = touchY - previoustouchY;
+        if(touchY-previoustouchY != 0){
+            //System.out.println("touchY: "+touchY+", previousTouchY: "+previoustouchY+", Difference: "+(touchY-previoustouchY));
+        }
+        if(touching){
+            dy = (touchY - previoustouchY);
         }else{
             dy = 0;
         }
@@ -88,12 +91,12 @@ public class Player extends GameObject{
         }
         */
 
-        if(dy>14)dy = 14;
-        if(dy<-14)dy = -14;
+        //if(dy>14)dy = 14;
+        //if(dy<-14)dy = -14;
         if(y<0)y=0;
         if(y>930)y=930;
 
-        y += dy*2;
+        y += dy;
         dy = 0;
 
         previoustouchY = touchY;
@@ -113,5 +116,8 @@ public class Player extends GameObject{
     }
     public void setTouchY(int touchY){
         this.touchY = touchY;
+    }
+    public void setPrevioustouchY (int touchY){
+        this.previoustouchY = touchY;
     }
 }

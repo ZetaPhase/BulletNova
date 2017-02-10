@@ -69,14 +69,14 @@ public class GamePanel extends SurfaceView implements SurfaceHolder.Callback
         if(event.getAction()==MotionEvent.ACTION_DOWN){
             if(!player.getPlaying()){
                 player.setPlaying(true);
-            }else{
-                player.setUp(true);
             }
+            player.setTouching(true);
             int TouchX = (int) event.getX();
             int TouchY = (int) event.getY();
             player.setTouchX(TouchX);
             player.setTouchY(TouchY);
-            System.out.println("("+TouchX+", "+TouchY+")");
+            player.setPrevioustouchY(TouchY);
+            //System.out.println("("+TouchX+", "+TouchY+")");
             return true;
         }
         if(event.getAction()==MotionEvent.ACTION_MOVE){
@@ -84,10 +84,11 @@ public class GamePanel extends SurfaceView implements SurfaceHolder.Callback
             int TouchY = (int) event.getY();
             player.setTouchX(TouchX);
             player.setTouchY(TouchY);
-            System.out.println("("+TouchX+", "+TouchY+")");
+            //System.out.println("("+TouchX+", "+TouchY+")");
         }
         if(event.getAction()==MotionEvent.ACTION_UP){
-            player.setUp(false);
+            //System.out.println("up");
+            player.setTouching(false);
             return true;
         }
         return super.onTouchEvent(event);
