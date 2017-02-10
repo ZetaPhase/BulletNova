@@ -53,7 +53,7 @@ public class GamePanel extends SurfaceView implements SurfaceHolder.Callback
     public void surfaceCreated(SurfaceHolder holder){
 
         bg = new Background(BitmapFactory.decodeResource(getResources(), R.drawable.background));
-        player = new Player(BitmapFactory.decodeResource(getResources(), R.drawable.helicopter), 260, 95, 3);
+        player = new Player(BitmapFactory.decodeResource(getResources(), R.drawable.tetroid), 200, 200, 3);
         //we can safely start the game loop
         System.out.println(thread.getState());
         thread = new MainThread(getHolder(), this);

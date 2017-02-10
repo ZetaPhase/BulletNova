@@ -51,10 +51,12 @@ public class Player extends GameObject{
         animation.update();
 
         System.out.println("Dya" + dya);
-        if(Math.abs(touchY - y)>8){
-            dy = (int)(dya=(touchY - y));
-        }else{
-            dy = (int)(dya=0);
+        if(up) {
+            if(Math.abs(touchY - y)>8){
+                dy = (int)(dya=(touchY - y));
+            }else{
+                dy = (int)(dya=0);
+            }
         }
         /*
         if(touchY < y){
