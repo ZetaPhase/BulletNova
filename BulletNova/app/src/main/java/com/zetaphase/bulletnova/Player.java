@@ -57,6 +57,8 @@ public class Player extends GameObject{
             }else{
                 dy = (int)(dya=0);
             }
+        }else{
+            dy = (int)(dya=0);
         }
         /*
         if(touchY < y){
