@@ -53,6 +53,12 @@ public class Player extends GameObject{
         animation.update();
 
         System.out.println("Dya" + dya);
+        if(up){
+            dy = touchY - previoustouchY;
+        }else{
+            dy = 0;
+        }
+        /*
         if(up) {
             if(Math.abs(touchY - y)>8){
                 dy = (int)(dya=(touchY - y));
@@ -61,12 +67,6 @@ public class Player extends GameObject{
             }
         }else{
             dy = (int)(dya=0);
-        }
-        /*
-        if(touchY < y){
-            dy = (int)(dya=(touchY - y));
-        }else{
-            dy = (int)(dya=(y-touchY));
         }
         */
         /*
