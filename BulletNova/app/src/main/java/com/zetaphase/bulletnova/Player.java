@@ -52,13 +52,20 @@ public class Player extends GameObject{
         }
         animation.update();
 
-        System.out.println("Dya" + dya);
+        //System.out.println("Dya" + dya);
+        /*
+        IMPLEMENTATION #1
+        - Player Y position does not change according to TouchX
+        - Changes according to difference in TouchX and PreviousTouchX
+         */
         if(up){
             dy = touchY - previoustouchY;
         }else{
             dy = 0;
         }
         /*
+        IMPLEMENTATION #2
+        - Player Y accelerates to current TouchY
         if(up) {
             if(Math.abs(touchY - y)>8){
                 dy = (int)(dya=(touchY - y));
@@ -68,8 +75,10 @@ public class Player extends GameObject{
         }else{
             dy = (int)(dya=0);
         }
-        */
-        /*
+
+        IMPLEMENTATION #3
+        - When finger touching screen, upward acceleration
+        - When finger not touching screen, downward acceleration
         if(up){
             dy = (int)(dya-=1.1);
 
