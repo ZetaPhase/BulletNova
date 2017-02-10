@@ -14,6 +14,8 @@ public class Player extends GameObject{
     private long startTime;
     private int touchX;
     private int touchY;
+    private int previoustouchX;
+    private int previoustouchY;
 
     public Player(Bitmap res, int w, int h, int numFrames) {
 
@@ -84,6 +86,8 @@ public class Player extends GameObject{
 
         y += dy*2;
         dy = 0;
+
+        previoustouchY = touchY;
     }
 
     public void draw(Canvas canvas)

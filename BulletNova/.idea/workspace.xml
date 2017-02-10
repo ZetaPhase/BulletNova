@@ -46,11 +46,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GamePanel.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GamePanel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zetaphase/bulletnova/GamePanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1214">
-              <caret line="99" column="28" selection-start-line="99" selection-start-column="28" selection-end-line="99" selection-end-column="28" />
+            <state relative-caret-position="782">
+              <caret line="46" column="9" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -78,17 +78,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Player.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zetaphase/bulletnova/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="84" column="18" selection-start-line="84" selection-start-column="18" selection-end-line="84" selection-end-column="18" />
+            <state relative-caret-position="493">
+              <caret line="62" column="30" selection-start-line="62" selection-start-column="30" selection-end-line="62" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2259#2260#0" expanded="true" />
-                <element signature="e#2295#2296#0" expanded="true" />
-                <element signature="e#2334#2335#0" expanded="true" />
-                <element signature="e#2370#2371#0" expanded="true" />
+                <element signature="e#2357#2358#0" expanded="true" />
+                <element signature="e#2393#2394#0" expanded="true" />
+                <element signature="e#2432#2433#0" expanded="true" />
+                <element signature="e#2468#2469#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -2357,10 +2357,10 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2259#2260#0" expanded="true" />
-            <element signature="e#2295#2296#0" expanded="true" />
-            <element signature="e#2334#2335#0" expanded="true" />
-            <element signature="e#2370#2371#0" expanded="true" />
+            <element signature="e#2357#2358#0" expanded="true" />
+            <element signature="e#2393#2394#0" expanded="true" />
+            <element signature="e#2432#2433#0" expanded="true" />
+            <element signature="e#2468#2469#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2647,20 +2647,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zetaphase/bulletnova/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="84" column="18" selection-start-line="84" selection-start-column="18" selection-end-line="84" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2259#2260#0" expanded="true" />
-            <element signature="e#2295#2296#0" expanded="true" />
-            <element signature="e#2334#2335#0" expanded="true" />
-            <element signature="e#2370#2371#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zetaphase/bulletnova/GameObject.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -2689,10 +2675,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zetaphase/bulletnova/GamePanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1214">
-          <caret line="99" column="28" selection-start-line="99" selection-start-column="28" selection-end-line="99" selection-end-column="28" />
+        <state relative-caret-position="782">
+          <caret line="46" column="9" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zetaphase/bulletnova/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="62" column="30" selection-start-line="62" selection-start-column="30" selection-end-line="62" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2357#2358#0" expanded="true" />
+            <element signature="e#2393#2394#0" expanded="true" />
+            <element signature="e#2432#2433#0" expanded="true" />
+            <element signature="e#2468#2469#0" expanded="true" />
           </folding>
         </state>
       </provider>
